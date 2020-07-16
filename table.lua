@@ -27,3 +27,12 @@ minetest.register_node("mcl_enchanting:table", {
 		return 0
 	end,
 }) 
+
+minetest.register_craft({
+	output = "mcl_enchanting:table",
+	recipe = {
+		{"", "mcl_books:book", ""},
+		{"mcl_core:diamond", "mcl_core:obsidian", "mcl_core:diamond"},
+		{"mcl_core:obsidian", "mcl_core:obsidian", "mcl_core:obsidian"}
+	}
+})
